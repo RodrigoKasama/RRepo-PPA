@@ -12,8 +12,8 @@ colnames(vinhos)[1] <- "Tipo"
 vinhos$Tipo <- factor(vinhos$Tipo, levels = sort(unique(vinhos$Tipo)))
 
 # Criando uma pasta para salvar os gráficos, se não existir
-if (!dir.exists("Teste#1")) {
-  dir.create("Teste#1")
+if (!dir.exists("boxplot_1D")) {
+  dir.create("boxplot_1D")
 }
 
 # Criando um gráfico box-plot para cada atributo, agrupado pelo tipo de vinho
@@ -26,6 +26,6 @@ for (i in 2:ncol(vinhos)) {
     theme_minimal() +
     scale_fill_brewer(palette = "Set1")
   
-  # Salvando cada gráfico na pasta Teste#1
+  # Salvando cada gráfico na pasta boxplot_1D
   ggsave(filename = paste0("boxplot_1D/boxplot_", colnames(vinhos)[i], ".png"), plot = p)
 }
