@@ -4,7 +4,7 @@ library(ggplot2)
 library(dplyr)
 
 # Lendo o arquivo CSV sem cabeçalho
-vinhos <- read.csv("vinhos.csv", header = FALSE, sep = ",")
+vinhos <- read.csv("vinhos.csv", header = TRUE, sep = ",")
 
 # Definindo o nome da primeira coluna como tipo de vinho
 colnames(vinhos)[1] <- "Tipo"

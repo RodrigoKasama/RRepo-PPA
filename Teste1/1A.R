@@ -1,5 +1,5 @@
 setwd("/home/lucas_silva/RRepo-PPA/Teste1")
-vinhos <- read.csv("vinhos.csv", header = FALSE, sep = ",")
+vinhos <- read.csv("vinhos.csv", header = TRUE, sep = ",")
 head(vinhos)
 
 media_vinhos <- colMeans(vinhos, na.rm = TRUE)
