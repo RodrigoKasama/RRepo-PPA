@@ -1,3 +1,4 @@
+library(gridExtra)
 wine_dataset_path = "Teste_n1/vinhos.csv"
 wine_data <- read.csv(wine_dataset_path, header = TRUE)
 
