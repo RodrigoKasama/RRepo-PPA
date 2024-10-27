@@ -1,3 +1,4 @@
+setwd("/home/lucas_silva/RRepo-PPA/Teste1")
 # Carregar as bibliotecas necessárias
 library(ggplot2)
 library(dplyr)
